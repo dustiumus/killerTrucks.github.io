@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Killer Trucks</title>
+    <link rel="stylesheet" href="truck.css"/>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <main>
+        <h1>*Killer Trucks Giveaway*</h1>
+        <h3>We are voting on the next Dream Truck to Giveaway this year!<br>
+                  Click your Favorite to reveal the Name and Vote Below!
+        </h3>
+        <section1>
+            <img id="warrior" src="https://www.nissanusa.com/content/dam/Nissan/us/vehicles/FutureAndConcept/TitanWarrior/nissan-titan-warrior-concept.jpg.ximg.l_full_m.smart.jpg" height="300px" width="600px"><br>
+            <img id="blue" src="https://images.holley.com/ram_trx-14.jpg" height="300px" width="400px">
+            <img id="chief" src="https://i.pinimg.com/originals/d5/0b/85/d50b85c3335c629a959bff3d7a6eb4d4.jpg" height="300px" width="350px"><br>
+            <img id="blackBeauty" src="https://smhttp-ssl-53780.nexcesscdn.net/shop/media/catalog/product/cache/1/image/780x440/17f82f742ffe127f42dca9de82fb58b1/i/m/img_5904_cropped.jpg" height="300px" width="500px">
+        </section1>
+        <section>
+            <form>
+                <input id="name" placeholder="Truck Name"/><br>
+                <button class="blobby-button">Your Dream Truck <span class="inner">
+                    <span class="blobs">
+                        <span class="blob"></span>
+                        <span class="blob"></span>
+                        <span class="blob"></span>
+                        <span
+                        class="blob"></span>
+                    </span>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7"
+                            result="goo"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
+            </button>
+        </form>
+    </section>
+        <h2>Dream Trucks</h2>
+    <ul></ul>
+    <aside id="message"></aside>
+    <!-- <section2>
+        <h4>Comments/Suggestions</h4>
+        <input type="text" id="comment" placeholder="Compliment/Suggest"/></input><br> 
+        <button type="button" id="commentBtn">Comment</button>
+     </section2> -->
+    </main>
+    <script src="truck.js"></script>
+</body>
+</html>
